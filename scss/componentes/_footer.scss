@@ -1,0 +1,32 @@
+footer  {
+    background-color: #faa41a;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    display: flex;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    ul  {
+        color: black;
+        
+        li{
+            a{
+                color: white;
+                text-decoration:underline;
+            }
+        }
+
+    }
+
+    div {
+        display: flex;
+        align-content: center;
+
+        a   {
+            padding: 2rem;
+            text-decoration: none;
+        }
+
+    }
+}

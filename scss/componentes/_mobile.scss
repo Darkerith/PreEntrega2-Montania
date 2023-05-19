@@ -1,0 +1,69 @@
+
+
+.eliminar{
+    display: none;
+}
+
+nav{
+    ul{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/*header*/
+
+.header{
+    background-image: url(../img/fondorl__mobile.png);
+
+    header{
+        p{
+            font-size: 2rem;
+        }
+    }
+}
+
+.nav ul {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#fondo_main {
+    padding: 1em 3em 3em 3em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.rlcs__mobile{
+    margin: auto;
+    display: block;
+}
+
+.intel {
+    display: flex;
+    flex-direction: column;
+
+    .intel__mobile {
+        display: block;
+    }
+}
+
+iframe {
+    width: 523px;
+    height: 290px;
+}
+
+
+footer{
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+}

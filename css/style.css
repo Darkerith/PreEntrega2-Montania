@@ -1,182 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700;900&family=Secular+One&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;700;900&family=Secular+One&display=swap");
 body {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-family: 'Secular One', sans-serif;
-    margin: 0;
-}
-
-.nav {
-    background-color: #002233;
-    margin: 0;
-    padding: 0;
-    height: 11vh;
-}
-
-.nav ul {
-    list-style:none;
-    display: flex;
-    justify-content: space-around;
-    font-weight: bolder;
-    margin: 0;
-    padding-top: 1.5vh;
-    font-size: 3rem;
-}
-
-.secciones {
-    text-decoration: none;
-    color: #faa41a;
-}
-
-.rlcs__mobile {
-    display: none;
-}
-
-.activo {
-    color: white;
-    text-decoration: none;
-}
-
-.fondo_rl {
-    width: 100%;
-    height: 100vh;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Secular One", sans-serif;
+  margin: 0;
+  background-color: #131516;
+  color: white;
 }
 
 .index_style {
-    padding-left: 5%;
-    padding-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .index_style h1 {
-    text-align: center;
-    font-size: 4rem;
-    font-weight:300;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
 }
 
 .index_style h2 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .index_style p {
-    font-size: 1.5rem;
-    text-align: left;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+nav {
+  background-color: #002233;
+  margin: 0;
+  padding: 0;
+  height: 11vh;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bolder;
+  margin: 0;
+  padding-top: 1.5vh;
+  font-size: 3rem;
+}
+nav ul a {
+  text-decoration: none;
+  color: #faa41a;
 }
 
 .header {
-    background-image: url(../img/fondo_rl1.jpg);
-
+  background-image: url(../img/fondo_rl1.jpg);
+  margin-bottom: 4rem;
 }
-
-#fondo_main {
-
-    height: 60vh;
-    color: white;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 2px black;
-    text-align: center;
-    padding: 3em;
+.header header p {
+  margin: 0;
 }
-    
-.footer {
-    background-color: #faa41a;
-    margin-top: 3rem;
-    padding: 1.5rem;
-    display: flex;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-evenly;
+.header header div {
+  height: 60vh;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  padding: 5rem;
+  margin: 0 0 1rem 0;
 }
-
-.footer__socials{
-    display: flex;
-    align-content: center;
+.header header div .rlcs__mobile {
+  display: none;
 }
-
-.footer__socials a {
-    padding: 2rem;
-}
-
 
 .li_size {
-    font-size: 1.5rem;
-}    
-
+  font-size: 1.5rem;
+  list-style: none; /* Remove default bullets */
+}
+.li_size li::before {
+  content: "•"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #faa41a; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
 .li_size strong {
-    color: #faa41a;
+  color: #faa41a;
 }
 
 .intel {
-    display: flex;
-align-items: center;
-justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .intel__mobile {
+  display: none;
+}
+
+footer {
+  background-color: #faa41a;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  display: flex;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer ul {
+  color: black;
+}
+footer ul li a {
+  color: white;
+  text-decoration: underline;
+}
+footer div {
+  display: flex;
+  align-content: center;
+}
+footer div a {
+  padding: 2rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .eliminar {
     display: none;
+  }
+  nav ul {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  /*header*/
+  .header {
+    background-image: url(../img/fondorl__mobile.png);
+  }
+  .header header p {
+    font-size: 2rem;
+  }
+  .nav ul {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  #fondo_main {
+    padding: 1em 3em 3em 3em;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .rlcs__mobile {
+    margin: auto;
+    display: block;
+  }
+  .intel {
+    display: flex;
+    flex-direction: column;
+  }
+  .intel .intel__mobile {
+    display: block;
+  }
+  iframe {
+    width: 523px;
+    height: 290px;
+  }
+  footer {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  footer div {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
 }
 
-
-/*  Mobile view  */
-
-@media (max-width: 576px) {
-    
-    .eliminar{
-        display: none;
-    }
-
-    /*header*/
-    
-    .header{
-        background-image: url(../img/fondorl__mobile.png);
-    }
-
-    .nav ul {
-        font-size: 1.5rem;
-        padding: 1rem;
-    }
-
-    .rlcs__mobile {
-        display: block;
-    }
-
-    #fondo_main {
-        padding: 1em 3em 3em 3em;
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    .rlcs__mobile {
-        margin: auto;
-    }
-
-
-    .intel {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .intel__mobile {
-        display: block;
-    }
-
-    /* Footer */
-    
-    .footer {
-        font-size: 1.2rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .footer__socials {
-        display: flex;
-        justify-content: space-around;
-        align-content: center;
-    }
-
-    iframe {
-        width: 523px;
-        height: 290px;
-    }
-
-}
+/*# sourceMappingURL=style.css.map */
